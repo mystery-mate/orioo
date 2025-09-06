@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+/* ✅ Prevent horizontal scrollbar */
+html, body {
+  overflow-x: hidden;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.chat-container, .video-container {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.chat-log {
+  border: 1px solid #ccc;
+  background: #fff;
+  height: 300px;
+  overflow-y: auto;
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.chat-input {
+  display: flex;
+  gap: 5px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.chat-input button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#remote {
+  width: 400px;
+  height: 300px;
+  background: black;
+  margin-bottom: 10px;
+}
+
+#local {
+  width: 150px;
+  height: 100px;
+  background: black;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  border: 2px solid white;
+}
+
+.system {
+  color: black;
+  font-style: italic;
+}
+
+/* ✅ Only label gets colored */
+.you-label {
+  color: red;
+  font-weight: bold;
+}
+
+.stranger-label {
+  color: green;
+  font-weight: bold;
+}
+
+/* ✅ Actual message text stays black */
+.message-text {
+  color: black;
+}
